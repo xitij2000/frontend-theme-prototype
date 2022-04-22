@@ -1,0 +1,47 @@
+// Use this file to define style overrides for @edx/paragon
+// This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
+@mixin btn-styles($bg, $color, $border-color, $hover-bg, $hover-color, $hover-border-color) {
+  background: $bg !important;
+  color: $color !important;
+  border: 1px solid $border-color !important;
+  &:hover {
+    background-color: $hover-bg !important;
+    color: $hover-color !important;
+    border-color: $hover-border-color !important;
+  }
+}
+@mixin btn-styles($bg, $color, $border-color, $hover-bg, $hover-color, $hover-border-color) {
+  background: $bg !important;
+  color: $color !important;
+  border: 1px solid $border-color !important;
+  &:hover {
+    background-color: $hover-bg !important;
+    color: $hover-color !important;
+    border-color: $hover-border-color !important;
+  }
+}
+
+.btn-primary {
+  // Set the styles for the primary button
+  @include btn-styles(
+    $btn-primary-bg,
+    $btn-primary-color,
+    $btn-primary-border-color,
+    $btn-primary-hover-bg,
+    $btn-primary-hover-color,
+    $btn-primary-hover-border-color
+  );
+}
+
+
+.btn-secondary {
+  // Set the styles for the primary button
+  @include btn-styles(
+    $btn-primary-bg,
+    $btn-primary-color,
+    $btn-primary-border-color,
+    $btn-primary-hover-bg,
+    $btn-primary-hover-color,
+    $btn-primary-hover-border-color
+  );
+}

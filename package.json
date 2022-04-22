@@ -1,0 +1,17 @@
+{
+  "name": "red-theme",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "fedx-scripts webpack",
+    "serve": "python3 -m http.server --directory dist --bind localhost 8111 ",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@edx/brand": "file:./brand",
+    "@edx/paragon": "19.15.0"
+  },
+  "devDependencies": {
+    "@edx/frontend-build": "9.1.4"
+  }
+}
